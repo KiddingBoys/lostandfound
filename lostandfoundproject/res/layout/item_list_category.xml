@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout 
+             android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical" 
+            >
+    
+    <Button
+        android:id="@+id/layout_wallet"
+        style="@style/Smile.TextView._Black"
+        android:layout_width="match_parent"
+        android:background="@drawable/base_pop_bg_selector"
+        android:padding = "10dp"
+        android:gravity="center"
+        android:text="钱包" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" >
+    </View>
+
+    <Button
+        android:id="@+id/layout_card"
+        style="@style/Smile.TextView._Black"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/base_pop_bg_selector"
+        android:gravity="center"
+        android:text="证件" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" >
+    </View>
+
+    <Button
+        android:id="@+id/layout_key"
+        style="@style/Smile.TextView._Black"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/base_pop_bg_selector"
+        android:gravity="center"
+        android:text="钥匙" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" >
+    </View>
+
+    <Button
+        android:id="@+id/layout_electric"
+        style="@style/Smile.TextView._Black"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/base_pop_bg_selector"
+        android:gravity="center"
+        android:text="数码" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" >
+    </View>
+
+    <Button
+        android:id="@+id/layout_ornaments"
+        style="@style/Smile.TextView._Black"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/base_pop_bg_selector"
+        android:gravity="center"
+        android:text="饰品" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" >
+    </View>
+
+    <Button
+        android:id="@+id/layout_clothes"
+        style="@style/Smile.TextView._Black"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/base_pop_bg_selector"
+        android:gravity="center"
+        android:text="衣服" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" >
+    </View>
+  <Button
+        android:id="@+id/layout_doc"
+        style="@style/Smile.TextView._Black"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/base_pop_bg_selector"
+        android:gravity="center"
+        android:text="文件" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" >
+    </View>
+    <Button
+        android:id="@+id/layout_book"
+        style="@style/Smile.TextView._Black"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/base_pop_bg_selector"
+        android:gravity="center"
+        android:text="书籍" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" >
+    </View>
+ <Button
+        android:id="@+id/layout_pet"
+        style="@style/Smile.TextView._Black"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/base_pop_bg_selector"
+        android:gravity="center"
+        android:text="宠物" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" >
+    </View>
+    <Button
+        android:id="@+id/layout_car"
+        style="@style/Smile.TextView._Black"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/base_pop_bg_selector"
+        android:gravity="center"
+        android:text="车辆" />
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" >
+    </View>
+
+    <Button
+        android:id="@+id/layout_other"
+        style="@style/Smile.TextView._Black"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/base_pop_bg_selector"
+        android:gravity="center"
+        android:text="其它" />
+    
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

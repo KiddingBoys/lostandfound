@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+>
+   <include layout="@layout/include_top_bar"/>
+        <LinearLayout 
+            
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+          android:layout_marginTop="15dip"      
+        android:background="@drawable/usermainpage_bg_center" 
+        android:orientation="vertical"  
+            >
+    
+          <RelativeLayout
+        android:id="@+id/layout_personset_personinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"      
+        android:clickable="true"
+      
+      
+        >
+          <ImageView
+            android:id="@+id/mime_img_01"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/ic_personset_personinfo"
+            android:scaleType="fitXY" />
+           <TextView
+        android:id="@+id/card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"  
+        android:layout_toRightOf="@id/mime_img_01" 
+        android:text="个人信息"
+        android:textSize="16sp"
+        android:textColor="#202020"
+       
+        />
+          <ImageView
+                android:id="@+id/row_img_01"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"  
+        		android:layout_marginRight="10dip"      	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+        		android:src="@drawable/mm_submenu" />
+              
+       
+
+          </RelativeLayout>
+          
+          <ImageView 
+              
+             android:layout_width="fill_parent"
+             android:layout_height="1dip"    
+             android:background="@drawable/line"
+             android:layout_marginLeft="60dip" 
+              
+              />
+          
+          
+          <RelativeLayout
+        android:id="@+id/layout_personset_changepsw"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"      
+        android:clickable="true"
+      
+      
+        >
+          <ImageView
+            android:id="@+id/mime_img_02"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/ic_personset_changepsw"
+            android:scaleType="fitXY" />
+           <TextView
+        android:id="@+id/card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"  
+        android:layout_toRightOf="@id/mime_img_02" 
+        android:text="修改密码"
+        android:textSize="16sp"
+        android:textColor="#202020"
+       
+        />
+          <ImageView
+                android:id="@+id/row_img_02"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"  
+        		android:layout_marginRight="10dip"      	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+        		android:src="@drawable/mm_submenu" />
+              
+       
+
+          </RelativeLayout>
+   
+ </LinearLayout>
+   
+      <RelativeLayout
+        android:id="@+id/mime_layout_06"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"      
+        android:clickable="true"
+          android:layout_marginTop="15dip"      
+        android:background="@drawable/usermainpage_bg_center" 
+      
+        >
+          <ImageView
+            android:id="@+id/mime_img_06"
+            android:layout_width="36.0dip"
+            android:layout_height="36.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/icon_personset_fankui"
+            android:scaleType="fitXY" />
+           <TextView
+        android:id="@+id/card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"  
+        android:layout_toRightOf="@id/mime_img_06" 
+        android:text="反馈"
+        android:textSize="16sp"
+        android:textColor="#202020"
+       
+        />
+          <ImageView
+                android:id="@+id/row_img_05"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"  
+        		android:layout_marginRight="10dip"      	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+        		android:src="@drawable/mm_submenu" />
+              
+       
+
+          </RelativeLayout>
+    
+   
+    
+     <Button 
+         android:id="@+id/btn_personset_exit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip" 
+        android:layout_marginRight="10dip" 
+        android:text="注销用户"
+        android:textColor="@color/lightwhite"
+        android:textSize="16sp"   
+        android:background="@drawable/button_exit_askfor"  
+         
+         
+         />
+    
+    
+    
+   
+    
+    
+    
+   
+</LinearLayout>

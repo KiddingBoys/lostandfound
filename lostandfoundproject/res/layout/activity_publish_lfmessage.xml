@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/include_top_bar"/>
+    
+ <ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"            
+        >
+    
+  <LinearLayout 
+     
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"   
+    android:orientation="vertical"  
+      >
+   
+      
+          <RelativeLayout
+      				    
+            			android:layout_width="fill_parent"
+            			android:layout_height="50dip"
+            			android:gravity="center_vertical"
+            		    android:layout_marginTop="10dip"
+            			android:clickable="true"
+            			android:background="@drawable/tm_button_white_bg" >
+            			 
+        				    
+            			 <TextView
+            			    android:id="@+id/mtv_01"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"        				       				
+        					android:layout_centerVertical="true"
+        					android:layout_marginLeft="10dip"
+        					android:text="发布时间"
+        					android:textSize="14sp"		
+							android:textColor="#000" />
+            			
+            			 <TextView
+            			     android:id="@+id/tv_publish_lfmessage_time"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:layout_toRightOf="@id/mtv_01"
+        					android:layout_marginLeft="10dip"
+        					android:layout_marginRight="10dip"
+        					android:layout_centerVertical="true"
+        					android:padding="8dp" 
+        					android:text=""
+        					android:textSize="14sp"		
+							android:textColor="#000" />
+
+            			 
+            			 <TextView
+            			    android:id="@+id/tv_publish_lfmessage_updatetime"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"        				       				
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:layout_marginRight="10dip"
+        					android:text="更新时间"
+        				    android:textColor="@drawable/text_blue"
+                            android:textSize="16sp"
+                            />
+            			 
+										
+      				</RelativeLayout>  
+        
+        
+                 <RelativeLayout
+      				    android:id="@+id/activtiy_subject"
+            			android:layout_width="fill_parent"
+            			android:layout_height="50dip"
+            			android:gravity="center_vertical"
+            		    android:layout_marginTop="10dip"
+            			android:clickable="true"
+            			android:background="@drawable/tm_button_white_bg" >
+            			 
+        				    
+            			 <TextView
+            			    android:id="@+id/mtv_02"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"        				       				
+        					android:layout_centerVertical="true"
+        					android:layout_marginLeft="10dip"
+        					android:text="物品名称"
+        					android:textSize="14sp"		
+							android:textColor="#000" />
+            			
+            			    <EditText
+            			     android:id="@+id/et_publish_lfmessage_title"
+        					android:layout_width="fill_parent" 
+        					android:layout_height="wrap_content"
+        					android:layout_toRightOf="@id/mtv_02"
+        					android:layout_marginLeft="10dip"
+        					android:layout_marginRight="10dip"
+        					android:layout_centerVertical="true"
+        					android:padding="8dp"
+        					android:maxLength="20"
+        					android:singleLine="true" 
+        					android:hint="输入物品的名称，20字以内"
+        					android:background="@null"
+        					android:text=""
+        					android:textSize="14sp"		
+							android:textColor="#202020" />
+
+										
+      				</RelativeLayout>
+        
+                  <RelativeLayout
+      				    android:id="@+id/activtiy_content"
+            			android:layout_width="fill_parent"
+            			android:layout_height="50dp"
+            			android:gravity="center_vertical"
+            		    android:layout_marginTop="10dip"            		   
+            			android:clickable="true"
+            			android:background="@drawable/tm_button_white_bg" >
+            			 
+        				    
+            		 <ImageView
+            android:id="@+id/mtv_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/s_n_dynamic_btn_gps_selected"
+            android:scaleType="fitXY" />
+            			
+            			 <EditText
+            			     android:id="@+id/et_publish_lfmessage_place"
+        					android:layout_width="fill_parent" 
+        					android:layout_height="wrap_content"
+        					android:layout_toRightOf="@id/mtv_03"
+        					android:layout_marginLeft="10dip"
+        					android:layout_marginRight="10dip"
+        					android:layout_centerVertical="true"
+        					android:padding="8dp"
+        					android:maxLength="200"        				
+        					android:hint="输入位置信息"
+        					android:background="@null"
+        					android:text=""
+        					android:textSize="14sp"		
+							android:textColor="#202020" />
+			
+      				</RelativeLayout>
+        
+                  
+             <RelativeLayout 
+           android:id="@+id/layout_publish_lfmessage_image"
+            android:layout_width="fill_parent"
+           android:layout_height="50dip" 
+           android:layout_marginTop="10dip" 
+           android:clickable="true"
+           android:background="@color/topcolor"
+            >          
+          
+               <TextView
+                    android:id="@+id/tv_publish_lfmessage_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                     
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"                                
+                    android:text="选择图片"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" /> 
+
+        </RelativeLayout>      
+                  
+             <ImageView 
+                 android:id="@+id/iv_publish_lfmessage_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"    
+                    android:layout_marginTop="5dip" 
+                    
+                 />
+             
+               <RelativeLayout 
+           android:id="@+id/layout_publish_lfmessage_category"
+            android:layout_width="fill_parent"
+           android:layout_height="50dip" 
+           android:layout_marginTop="10dip" 
+           android:clickable="true"
+           android:background="@color/topcolor"
+            >          
+          
+               <TextView
+                    android:id="@+id/tv_publish_lfmessage_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                     
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"                                
+                    android:text="钱包"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" /> 
+
+        </RelativeLayout>
+       <RelativeLayout 
+           android:id="@+id/show_local"
+            android:layout_width="fill_parent"
+           android:layout_height="50dip" 
+           android:layout_marginTop="10dip" 
+           android:clickable="true"
+           android:background="@drawable/tm_button_white_bg"
+            > 
+           
+            
+        	 <TextView
+            			    android:id="@+id/mtv_04"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"        				       				
+        					android:layout_centerVertical="true"
+        					android:layout_marginLeft="10dip"
+        					android:text="详细描述"
+        					android:textSize="14sp"		
+							android:textColor="#000" />
+            			
+            		 <EditText
+            			     android:id="@+id/et_publish_lfmessage_content"
+        					android:layout_width="fill_parent" 
+        					android:layout_height="wrap_content"
+        					android:layout_toRightOf="@id/mtv_04"
+        					android:layout_marginLeft="10dip"
+        					android:layout_marginRight="10dip"
+        					android:layout_centerVertical="true"
+        					android:padding="8dp"
+        					android:maxLength="200"        				
+        					android:hint="输入详细描述，150字以内"
+        					android:background="@null"
+        					android:text=""
+        					android:textSize="14sp"		
+							android:textColor="#202020" />
+
+        </RelativeLayout>
+  
+         <TextView 
+               android:layout_width="fill_parent"
+           android:layout_height="250dip" 
+             />
+  </LinearLayout>
+  
+    </ScrollView>
+</LinearLayout>

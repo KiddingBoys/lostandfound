@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+     >
+<include layout="@layout/include_top_bar"/>
+ 
+     
+     <RelativeLayout
+        android:id="@+id/superinput"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/edit_bg"
+         >
+    
+    <EditText
+            android:id="@+id/et_updateinfo_signature"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:gravity="left"
+            android:background="#00ffffff"                                      
+            android:paddingLeft="12.0dip"
+            android:textColor="#808080"
+            android:textColorHint="#ff666666"
+            android:textSize="16.0sp" />
+    
+          <TextView 
+               android:id="@+id/tv_updateinfo_editnum"
+               android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="15"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dip"
+                android:layout_marginRight="10dip"
+                android:gravity="center"
+        		android:textSize="16sp"      		     		        		
+				android:textColor="@color/gray"
+       
+       
+       />
+    
+    
+  </RelativeLayout> 
+    
+     
+			    
+          
+
+</LinearLayout>

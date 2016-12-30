@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item_main_lfmessage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/buttonstyle"
+   >
+
+    <ImageView
+        android:id="@+id/iv_main_listitem_infopic"
+        android:layout_width="10dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        />
+
+  
+
+    <TextView
+        android:id="@+id/tv_lfmsg_details_comment_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/iv_main_listitem_infopic"
+        android:layout_toRightOf="@+id/iv_main_listitem_infopic"
+     android:layout_marginTop="3dp"
+        
+        android:drawableLeft="@drawable/group_icon_gray"
+        android:text="poster" />
+
+     <TextView
+        android:id="@+id/tv_lfmsg_details_comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="3dp"
+        android:layout_alignTop="@+id/iv_main_listitem_infopic"
+        android:layout_toRightOf="@+id/tv_lfmsg_details_comment_poster"
+        android:layout_marginLeft="8dp"
+       
+        android:text="2016-05-07 12:59:01" />
+    <TextView
+        android:id="@+id/tv_lfmsg_details_comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/tv_lfmsg_details_comment_poster"
+        android:layout_toRightOf="@+id/iv_main_listitem_infopic"
+        
+        android:singleLine="true"
+        android:gravity="bottom"
+        android:textSize="12sp"
+        android:text="这里是内容" />
+
+   
+    
+    <TextView
+        android:id="@+id/tv_lfmsg_details_comment_reply"
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+android:layout_alignTop="@+id/iv_main_listitem_infopic"
+                   android:layout_centerVertical="true"
+        
+        android:singleLine="true"
+        android:gravity="bottom"
+        android:textSize="12sp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+
+        style="@style/Smile.TextView._White"
+        android:layout_alignParentRight="true"
+        android:background="@color/green"
+        android:text="回复"
+        >
+    </TextView>
+
+</RelativeLayout>

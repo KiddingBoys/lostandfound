@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_news_item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:layout_marginTop="20dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_news_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+      
+        android:orientation="vertical" >
+
+        
+
+
+        <RelativeLayout
+            android:id="@+id/rl_main_item"
+            android:layout_width="wrap_content"
+            android:layout_height="206dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_news_pic"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="0.55"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_main_topimg" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:background="#50000000" >
+
+                <TextView
+                    android:id="@+id/tv_news_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="新闻标题"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+ 
+                <TextView
+                    android:id="@+id/tv_news_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:text="2015-7-24"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/line" />
+
+        <TextView
+            android:id="@+id/tv_news_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+        
+            android:layout_marginTop="2dp"
+            android:maxLines="2"
+            android:text=" 本活动解释权归团队所有\n 提示：时间与2015-8-8截止。"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+          <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/line" />
+    </LinearLayout>
+
+</RelativeLayout>

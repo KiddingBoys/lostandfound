@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item_main_lfmessage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+   >
+
+    <ImageView
+        android:id="@+id/iv_main_listitem_infopic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_personset_changepsw" />
+
+    <TextView
+        android:id="@+id/tv_main_listitem_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_main_listitem_infopic"
+        android:layout_toRightOf="@+id/iv_main_listitem_infopic"
+        android:text="title"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/tv_main_listitem_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_main_listitem_infopic"
+		android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:text="寻物"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_main_listitem_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_main_listitem_title"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/group_icon_gray"
+        android:text="poster" />
+
+    <TextView
+        android:id="@+id/tv_main_listitem_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_main_listitem_infopic"
+        android:layout_toRightOf="@+id/iv_main_listitem_infopic"
+        android:layout_marginBottom="5dp"
+        android:singleLine="true"
+        android:gravity="bottom"
+        android:textSize="12sp"
+        android:text="2016-05-07 12:59:01" />
+
+    <TextView
+        android:id="@+id/tv_main_listitem_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_main_listitem_poster"
+        android:layout_marginLeft="8dp"
+        android:drawableLeft="@drawable/group_icon_location"
+        android:text="海虹公寓" />
+    
+    <TextView
+        android:id="@+id/tv_main_listitem_tel"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:textSize="12sp"
+        android:paddingBottom="3dp"
+        android:drawablePadding="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="8dp"
+        style="@style/Smile.TextView._White"
+        android:layout_below="@id/tv_main_listitem_place"
+        android:background="@color/green"
+        android:text="138024249542"
+        android:drawableLeft="@drawable/icon_photo" >
+    </TextView>
+
+</RelativeLayout>
