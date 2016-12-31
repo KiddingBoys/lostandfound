@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.devMode" value="true" />
+
+	<package name="register" namespace="/register"
+		extends="struts-default,json-default">
+		<!-- 返回注册信息 -->
+		<default-action-ref name="register"></default-action-ref>
+		<action name="register" class="com.lostandfound.action.RegisterAction"
+			method="register">
+			<result name="success" type="json">
+				<param name="root">info</param>
+			</result>
+		</action>
+	</package>
+	<package name="login" namespace="/login" extends="struts-default,json-default">
+		<default-action-ref name="login"></default-action-ref>
+		<action name="login" class="com.lostandfound.action.LoginAction"
+			method="login">
+			<result name="success" type="json">
+				<param name="root">info</param>
+			</result>
+		</action>
+		<!-- 用户数据更新 -->
+	</package>
+	<package name="user" namespace="/user" extends="struts-default,json-default">
+		<action name="modify_*" class="com.lostandfound.action.UserDataAction"
+			method="modify{1}">
+			<result name="success" type="json">
+				<param name="root">info</param>
+			</result>
+		</action>
+	</package>
+	<!-- 帖子 -->
+	<package name="post" namespace="/post" extends="struts-default,json-default">
+		<action name="post_*" class="com.lostandfound.action.PostAction"
+			method="post{1}">
+			<result name="success" type="json">
+				<param name="root">info</param>
+			</result>
+		</action>
+		<!-- 展示帖子 --><!-- 展示特定帖子的评论信息 -->
+		<action name="*" class="com.lostandfound.action.ListAction"
+			method="{1}">
+			<result name="success" type="json">
+				<param name="root">info</param>
+			</result>
+		</action>
+		<!-- 支持/取消支持帖子 -->
+		<action name="support" class="com.lostandfound.action.SupportAction"
+			method="support">
+			<interceptor-ref name="json">
+				<param name="contentType">application/json</param>
+			</interceptor-ref>
+			<result type="json" />
+		</action>
+		<!-- 设置帖子为已完成 -->
+		<action name="found" class="com.lostandfound.action.FoundAction"
+			method="found">
+			<interceptor-ref name="json">
+				<param name="contenType">application/json</param>
+			</interceptor-ref>
+			<result type="json"/>
+			</action>
+		<!-- 删除帖子 -->
+		<action name="delete" class="com.lostandfound.action.DeleteAction"
+			method="delete">
+			<interceptor-ref name="json">
+				<param name="contenType">application/json</param>
+			</interceptor-ref>
+			<result type="json"/>
+			</action>
+	</package>
+
+</struts>
