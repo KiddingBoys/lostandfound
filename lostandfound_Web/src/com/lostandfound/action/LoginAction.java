@@ -17,7 +17,7 @@ public class LoginAction extends ActionSupport{
 	private Info info; // 要返回的数据
 	public String login() {
 		String loginDataStr = JsonHelper.getJsonFromBody(ServletActionContext.getRequest());
-//		loginDataStr = "{\"name\":\"张光超\", \"password\":\"123456\"}";
+//		loginDataStr = "{\"name\":\"小隐\", \"password\":\"123456\"}";
 		User loginUser = gson.fromJson(loginDataStr, User.class);
 		service = new LoginService(loginUser);
 		info = new Info();
